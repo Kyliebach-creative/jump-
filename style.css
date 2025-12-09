@@ -1,7 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #ffffff; /* hoặc màu gì bạn muốn */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
 canvas {
-  display: block;
+  width: 400px;   /* hoặc 500px, 600px tuỳ bạn muốn nhỏ bao nhiêu */
+  height: auto;   /* giữ đúng tỉ lệ */
 }
