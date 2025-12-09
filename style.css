@@ -1,4 +1,4 @@
-/* Trang trắng, căn giữa canvas */
+/* Căn toàn bộ trang, cho canvas đứng giữa */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,11 +11,10 @@ html, body {
   align-items: center;       /* giữa dọc */
 }
 
-/* Thu nhỏ canvas 1684x2384 để vừa màn hình */
+/* Canvas gốc 1684x2384 nhưng được THU NHỎ, không bị méo */
 canvas {
-  max-height: 95vh;  /* không cao hơn 95% màn hình */
-  max-width: 60vw;   /* chiếm ~60% chiều ngang (poster dọc nên vậy là đẹp) */
-  width: auto;
-  height: auto;
+  max-height: 90vh;   /* cao tối đa = 90% chiều cao màn hình */
+  height: auto;       /* giữ đúng tỉ lệ */
+  width: auto;        /* không ép chiều ngang -> không méo */
   display: block;
 }
