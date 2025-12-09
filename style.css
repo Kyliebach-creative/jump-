@@ -1,4 +1,4 @@
-/* Căn giữa poster */
+/* Căn canvas ra giữa màn hình */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,9 +11,9 @@ html, body {
   align-items: center;
 }
 
-/* FULL HEIGHT – KHÔNG MÉO */
+/* THU NHỎ CANVAS 1684x2384 CHO VỪA MÀN HÌNH */
 canvas {
-  height: 100vh;   /* full chiều cao */
-  width: auto;     /* auto để đúng tỉ lệ 1684x2384 */
+  height: 90vh !important;   /* cao ≈ 90% màn hình, ĐÈ inline style */
+  width: auto !important;    /* tự giữ tỉ lệ, không méo */
   display: block;
 }
