@@ -1,6 +1,19 @@
+/* Căn giữa poster */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FULL HEIGHT – KHÔNG MÉO */
 canvas {
-  max-height: 60vh;   /* trước là 90vh, giờ nhỏ hẳn */
-  max-width: 40vw;    /* chỉ chiếm 40% chiều ngang màn hình */
-  width: auto;
-  height: auto;
+  height: 100vh;   /* full chiều cao */
+  width: auto;     /* auto để đúng tỉ lệ 1684x2384 */
   display: block;
+}
