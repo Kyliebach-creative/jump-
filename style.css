@@ -1,17 +1,18 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
   background: #ffffff;
+}
+
+/* Không scale, không ép width/height → không bao giờ bị bè ngang */
+body {
   display: flex;
-  justify-content: center;  /* căn giữa ngang */
-  align-items: center;      /* căn giữa dọc */
+  justify-content: center; /* căn giữa ngang */
+  align-items: flex-start; /* đứng trên, không cần giữa dọc cho đỡ rối */
+  min-height: 100vh;
 }
 
 canvas {
-  max-height: 90vh;   /* poster cao tối đa = 90% màn hình */
-  width: auto;
-  height: auto;
   display: block;
+  /* KHÔNG đặt width, KHÔNG đặt height ở đây */
 }
