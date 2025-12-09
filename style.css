@@ -1,16 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  height: 100%;
+  background: #ffffff;      /* màu nền trang */
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  /* căn giữa ngang */
+  align-items: center;      /* căn giữa dọc */
 }
 
 canvas {
-  max-width: 90vw;   /* canvas thu nhỏ để luôn vừa màn hình */
-  max-height: 90vh;  /* không vượt quá chiều cao */
+  max-width: 90vw;   /* không rộng hơn 90% màn hình */
+  max-height: 90vh;  /* không cao hơn 90% màn hình */
   width: auto;
   height: auto;
   display: block;
